@@ -1,23 +1,22 @@
 body {
-    background-color: white;
+    background-color: black;
     font-family: 'Press Start 2P', cursive;
 
 }
 
 .profile {
-    width: 80%;
-    height: 800px;
-    border: 5px solid darkgrey;
-    border-radius: 25px;
-    background-color: darkgrey;
-    padding: 20px;
+  width: 80%;
+  height: 800px;
+  border: 5px solid orangered;
+  border-radius: 25px;
+  background-color: orangered;
+  padding: 20px;
 }
-
 .right-panel {
-    height: 750px;
-    border-radius: 25px;
-    background-color: white;
-    padding: 20px !important;
+  height: 750px;
+  border-radius: 25px;
+  background-color: orange;
+  padding: 20px !important;
 }
 
 .profile-container {
@@ -28,3 +27,47 @@ body {
     height: 150px;
     width: 150px;
 }
+
+.terminalButtons {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    background-color: #ff3b47;
+    border-color: #9d252b;
+    display: inline-block;
+  }
+  
+  .terminalMinimize {
+    left: 11px;
+    background-color: #ffc100;
+    border-color: #9d802c;
+  }
+  
+  .terminalZoom {
+    left: 16px;
+    background-color: #00d742;
+    border-color: #049931;
+  }
+  
+  .terminalMenu {
+    height: 25px;
+    background-color: #bbb;
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .terminalScreen {
+    background-color: #151515;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 300px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
