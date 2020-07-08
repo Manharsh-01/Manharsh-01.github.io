@@ -29,29 +29,30 @@ body {
 }
 
 .terminalButtons {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    position: relative;
-    top: 6px;
-    left: 6px;
-    background-color: #ff3b47;
-    border-color: #9d252b;
-    display: inline-block;
-  }
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+}
   
   .terminalMinimize {
-    left: 11px;
+    margin-left: -5px;
     background-color: #ffc100;
     border-color: #9d802c;
   }
   
   .terminalZoom {
-    left: 16px;
+    /* left: 2px; */
     background-color: #00d742;
     border-color: #049931;
-  }
+    margin-left: -5px;
+}
   
   .terminalMenu {
     height: 25px;
@@ -69,5 +70,29 @@ body {
     padding: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+  .sonic {
+    position: relative;
+    /* padding-top: 20px; */
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 360px;
+    /* padding: 20px; */
+    border-radius: 5px;
+
   }
-  
+  .sonic .sonic-animation {
+    width: 720px;
+    height: 370px;
+    background: url(img/sonic-bg.png);
+    background-repeat: no-repeat;
+    /* animation: movefondo 1s linear infinite; */
+}
+
+img.resize {
+  max-width:15%;
+  max-height:15%;
+}
