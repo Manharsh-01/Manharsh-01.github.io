@@ -1,31 +1,35 @@
 body {
-    background-color: black;
-    font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  font-family: 'Press Start 2P', cursive; 
+  color: white;
 
 }
 
 .profile {
+  /*
   width: 80%;
   height: 800px;
   border: 5px solid orangered;
   border-radius: 25px;
   background-color: orangered;
-  padding: 20px;
+  padding: 20px;*/
 }
+
 .right-panel {
   height: 750px;
   border-radius: 25px;
   background-color: orange;
   padding: 20px !important;
+  
 }
-
 .profile-container {
-
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
-
 .profile-pic {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
 
 .terminalButtons {
@@ -40,59 +44,251 @@ body {
   margin-top: 5px;
   margin-left: 5px;
 }
-  
-  .terminalMinimize {
-    margin-left: -5px;
-    background-color: #ffc100;
-    border-color: #9d802c;
-  }
-  
-  .terminalZoom {
-    /* left: 2px; */
-    background-color: #00d742;
-    border-color: #049931;
-    margin-left: -5px;
-}
-  
-  .terminalMenu {
-    height: 25px;
-    background-color: #bbb;
-    margin: 0 auto;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-  }
-  
-  .terminalScreen {
-    background-color: #151515;
-    box-sizing: border-box;
-    margin: 0 auto;
-    height: 300px;
-    padding: 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-bottom: 20px;
+
+.terminalMinimize {
+  margin-left: -5px;
+  background-color: #ffc100;
+  border-color: #9d802c;
 }
 
-  .sonic {
-    position: relative;
-    /* padding-top: 20px; */
-    background-color: #ebebeb;
-    box-sizing: border-box;
-    margin: 0 auto;
-    height: 360px;
-    /* padding: 20px; */
-    border-radius: 5px;
+.terminalZoom {
+  /* left: 2px; */
+  background-color: #00d742;
+  border-color: #049931;
+  margin-left: -5px;
+}
 
-  }
-  .sonic .sonic-animation {
-    width: 720px;
-    height: 370px;
-    background: url(img/sonic-bg.png);
-    background-repeat: no-repeat;
-    /* animation: movefondo 1s linear infinite; */
+.terminalMenu {
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.terminalScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 300px;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.sonic {
+  position: relative;
+  /* padding-top: 20px; */
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 360px;
+  /* padding: 20px; */
+  border-radius: 5px;
+
+}
+
+.sonic .sonic-animation {
+  /* width: 780px; */
+  height: 370px;
+  background: url(img/sonic-bg.png);
+
+  /* object-fit: cover; */
+  animation: movebg 0.4s linear infinite;
 }
 
 img.resize {
-  max-width:15%;
-  max-height:15%;
+  max-width: 15%;
+  max-height: 15%;
+}
+
+.sonic-run {
+  position: relative;
+  bottom: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@keyframes movebg {
+  0% {
+    background-position: 780px;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
+
+p {
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.line1 {
+  color: #9CD9F0;
+  -webkit-animation: type .5s 1s steps(20, end) forwards;
+  -moz-animation: type .5s 1s steps(20, end) forwards;
+  -o-animation: type .5s 1s steps(20, end) forwards;
+  animation: type .5s 1s steps(20, end) forwards;
+}
+
+.cursor1 {
+  -webkit-animation: blink 1s 2s 2 forwards;
+  -moz-animation: blink 1s 2s 2 forwards;
+  -o-animation: blink 1s 2s 2 forwards;
+  animation: blink 1s 2s 2 forwards;
+}
+
+.line2 {
+  color: #CDEE69;
+  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+  -moz-animation: type .5s 4.25s steps(20, end) forwards;
+  -o-animation: type .5s 4.25s steps(20, end) forwards;
+  animation: type .5s 4.25s steps(20, end) forwards;
+}
+
+.cursor2 {
+  -webkit-animation: blink 1s 5.25s 2 forwards;
+  -moz-animation: blink 1s 5.25s 2 forwards;
+  -o-animation: blink 1s 5.25s 2 forwards;
+  animation: blink 1s 5.25s 2 forwards;
+}
+
+.line3 {
+  color: #E09690;
+  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+  -moz-animation: type .5s 7.5s steps(20, end) forwards;
+  -o-animation: type .5s 7.5s steps(20, end) forwards;
+  animation: type .5s 7.5s steps(20, end) forwards;
+}
+
+.cursor3 {
+  -webkit-animation: blink 1s 8.5s 2 forwards;
+  -moz-animation: blink 1s 8.5s 2 forwards;
+  -o-animation: blink 1s 8.5s 2 forwards;
+  animation: blink 1s 8.5s 2 forwards;
+}
+
+.line4 {
+  color: #fff;
+  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+  -moz-animation: type .5s 10.75s steps(20, end) forwards;
+  -o-animation: type .5s 10.75s steps(20, end) forwards;
+  animation: type .5s 10.75s steps(20, end) forwards;
+}
+
+.cursor4 {
+  -webkit-animation: blink 1s 11.5s infinite;
+  -moz-animation: blink 1s 8.5s infinite;
+  -o-animation: blink 1s 8.5s infinite;
+  animation: blink 1s 8.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-moz-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-o-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 17em;
+  }
 }
